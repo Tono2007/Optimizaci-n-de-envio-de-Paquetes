@@ -37,46 +37,53 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lbPesoTotal = new System.Windows.Forms.Label();
             this.lbGananciaTotal = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(84, 34);
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(71, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 30);
+            this.label2.Size = new System.Drawing.Size(338, 34);
             this.label2.TabIndex = 2;
             this.label2.Text = "Paquetes que se deben de enviar";
             // 
             // btnGuardarResultados
             // 
-            this.btnGuardarResultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarResultados.Location = new System.Drawing.Point(520, 316);
+            this.btnGuardarResultados.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnGuardarResultados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarResultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarResultados.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGuardarResultados.Location = new System.Drawing.Point(482, 316);
             this.btnGuardarResultados.Name = "btnGuardarResultados";
-            this.btnGuardarResultados.Size = new System.Drawing.Size(180, 31);
+            this.btnGuardarResultados.Size = new System.Drawing.Size(218, 31);
             this.btnGuardarResultados.TabIndex = 4;
             this.btnGuardarResultados.Text = "Guardar Resutados";
-            this.btnGuardarResultados.UseVisualStyleBackColor = true;
+            this.btnGuardarResultados.UseVisualStyleBackColor = false;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(520, 385);
+            this.btnCalcular.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCalcular.Location = new System.Drawing.Point(538, 398);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(109, 38);
             this.btnCalcular.TabIndex = 5;
             this.btnCalcular.Text = "Regresar";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // listView1
             // 
-            this.listView1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.listView1.BackColor = System.Drawing.SystemColors.Control;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Paquetes});
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.Location = new System.Drawing.Point(128, 105);
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Location = new System.Drawing.Point(126, 156);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(177, 303);
             this.listView1.TabIndex = 6;
@@ -123,12 +130,25 @@
             this.lbGananciaTotal.TabIndex = 10;
             this.lbGananciaTotal.Text = "-";
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.SeaGreen;
+            this.label4.Font = new System.Drawing.Font("AR CENA", 18.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(-2, -3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(809, 56);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Optimización de envio de paquetes";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormResultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(795, 490);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lbGananciaTotal);
             this.Controls.Add(this.lbPesoTotal);
             this.Controls.Add(this.label3);
@@ -137,6 +157,7 @@
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnGuardarResultados);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormResultados";
             this.Text = "FormResultados";
             this.ResumeLayout(false);
@@ -155,5 +176,6 @@
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label lbPesoTotal;
         public System.Windows.Forms.Label lbGananciaTotal;
+        private System.Windows.Forms.Label label4;
     }
 }

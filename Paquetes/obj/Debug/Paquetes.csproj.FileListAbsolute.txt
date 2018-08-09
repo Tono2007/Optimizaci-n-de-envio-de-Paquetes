@@ -8,3 +8,13 @@ C:\Users\Toño\Desktop\Paquetes\Paquetes\obj\Debug\Paquetes.Properties.Resources
 C:\Users\Toño\Desktop\Paquetes\Paquetes\obj\Debug\Paquetes.csproj.GenerateResource.Cache
 C:\Users\Toño\Desktop\Paquetes\Paquetes\obj\Debug\Paquetes.exe
 C:\Users\Toño\Desktop\Paquetes\Paquetes\obj\Debug\Paquetes.pdb
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\Paquetes.exe.config
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.exe
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.pdb
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\Paquetes.exe
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\Paquetes.pdb
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.csprojResolveAssemblyReference.cache
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.Form1.resources
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.FormResultados.resources
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.Properties.Resources.resources
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.csproj.GenerateResource.Cache
