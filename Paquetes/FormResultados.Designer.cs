@@ -38,6 +38,7 @@
             this.lbPesoTotal = new System.Windows.Forms.Label();
             this.lbGananciaTotal = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lbREs = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label2
@@ -133,7 +134,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.SeaGreen;
-            this.label4.Font = new System.Drawing.Font("AR CENA", 18.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(-2, -3);
             this.label4.Name = "label4";
@@ -142,12 +143,21 @@
             this.label4.Text = "Optimización de envio de paquetes";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lbREs
+            // 
+            this.lbREs.FormattingEnabled = true;
+            this.lbREs.Location = new System.Drawing.Point(0, 156);
+            this.lbREs.Name = "lbREs";
+            this.lbREs.Size = new System.Drawing.Size(120, 95);
+            this.lbREs.TabIndex = 12;
+            // 
             // FormResultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(795, 490);
+            this.Controls.Add(this.lbREs);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbGananciaTotal);
             this.Controls.Add(this.lbPesoTotal);
@@ -177,5 +187,6 @@
         public System.Windows.Forms.Label lbPesoTotal;
         public System.Windows.Forms.Label lbGananciaTotal;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.ListBox lbREs;
     }
 }

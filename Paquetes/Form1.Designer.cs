@@ -44,19 +44,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tbNom = new System.Windows.Forms.TextBox();
             this.btnAgregarP = new System.Windows.Forms.Button();
-            this.Salir = new System.Windows.Forms.Button();
             this.tbGanancia = new System.Windows.Forms.TextBox();
             this.tbPeso = new System.Windows.Forms.TextBox();
             this.tbCapacidad = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.GV_Items)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.SeaGreen;
-            this.label2.Font = new System.Drawing.Font("AR CENA", 18.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(0, -1);
             this.label2.Name = "label2";
@@ -207,17 +208,6 @@
             this.btnAgregarP.UseVisualStyleBackColor = false;
             this.btnAgregarP.Click += new System.EventHandler(this.btnAgregarP_Click);
             // 
-            // Salir
-            // 
-            this.Salir.BackColor = System.Drawing.Color.OrangeRed;
-            this.Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Salir.Location = new System.Drawing.Point(1090, 12);
-            this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(74, 33);
-            this.Salir.TabIndex = 14;
-            this.Salir.Text = "Salir";
-            this.Salir.UseVisualStyleBackColor = false;
-            // 
             // tbGanancia
             // 
             this.tbGanancia.Location = new System.Drawing.Point(292, 291);
@@ -252,18 +242,30 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "Kg";
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnCerrar.BackgroundImage = global::Paquetes.Properties.Resources.close_red;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCerrar.Location = new System.Drawing.Point(1139, 9);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(37, 33);
+            this.btnCerrar.TabIndex = 19;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1188, 490);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbCapacidad);
             this.Controls.Add(this.tbPeso);
             this.Controls.Add(this.tbGanancia);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Salir);
             this.Controls.Add(this.btnAgregarP);
             this.Controls.Add(this.tbNom);
             this.Controls.Add(this.label6);
@@ -282,6 +284,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GV_Items)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,7 +303,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbNom;
         private System.Windows.Forms.Button btnAgregarP;
-        private System.Windows.Forms.Button Salir;
         private System.Windows.Forms.TextBox tbGanancia;
         private System.Windows.Forms.TextBox tbPeso;
         private System.Windows.Forms.TextBox tbCapacidad;
@@ -308,6 +310,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colPeso;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGanancia;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }
 

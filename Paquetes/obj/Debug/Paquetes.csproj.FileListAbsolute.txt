@@ -18,3 +18,14 @@ C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\D
 C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.FormResultados.resources
 C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.Properties.Resources.resources
 C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.csproj.GenerateResource.Cache
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\Paquetes.exe.config
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\Paquetes.exe
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\Paquetes.pdb
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.csprojResolveAssemblyReference.cache
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.Form1.resources
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.FormResultados.resources
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.Properties.Resources.resources
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.csproj.GenerateResource.cache
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.csproj.CoreCompileInputs.cache
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.exe
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.pdb

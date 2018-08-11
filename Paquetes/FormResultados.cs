@@ -20,6 +20,7 @@ namespace Paquetes
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            lbREs.Items.Clear();
             this.Close();
         }
     }
