@@ -44,8 +44,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tbNom = new System.Windows.Forms.TextBox();
             this.btnAgregarP = new System.Windows.Forms.Button();
-            this.tbGanancia = new System.Windows.Forms.TextBox();
             this.tbPeso = new System.Windows.Forms.TextBox();
+            this.tbGanancia = new System.Windows.Forms.TextBox();
             this.tbCapacidad = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
@@ -144,6 +144,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Eliminar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label3
             // 
@@ -208,21 +209,21 @@
             this.btnAgregarP.UseVisualStyleBackColor = false;
             this.btnAgregarP.Click += new System.EventHandler(this.btnAgregarP_Click);
             // 
-            // tbGanancia
-            // 
-            this.tbGanancia.Location = new System.Drawing.Point(292, 291);
-            this.tbGanancia.Multiline = true;
-            this.tbGanancia.Name = "tbGanancia";
-            this.tbGanancia.Size = new System.Drawing.Size(127, 29);
-            this.tbGanancia.TabIndex = 15;
-            // 
             // tbPeso
             // 
-            this.tbPeso.Location = new System.Drawing.Point(292, 230);
+            this.tbPeso.Location = new System.Drawing.Point(292, 232);
             this.tbPeso.Multiline = true;
             this.tbPeso.Name = "tbPeso";
             this.tbPeso.Size = new System.Drawing.Size(127, 29);
-            this.tbPeso.TabIndex = 16;
+            this.tbPeso.TabIndex = 15;
+            // 
+            // tbGanancia
+            // 
+            this.tbGanancia.Location = new System.Drawing.Point(292, 300);
+            this.tbGanancia.Multiline = true;
+            this.tbGanancia.Name = "tbGanancia";
+            this.tbGanancia.Size = new System.Drawing.Size(127, 29);
+            this.tbGanancia.TabIndex = 16;
             // 
             // tbCapacidad
             // 
@@ -263,8 +264,8 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbCapacidad);
-            this.Controls.Add(this.tbPeso);
             this.Controls.Add(this.tbGanancia);
+            this.Controls.Add(this.tbPeso);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAgregarP);
             this.Controls.Add(this.tbNom);
@@ -303,8 +304,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbNom;
         private System.Windows.Forms.Button btnAgregarP;
-        private System.Windows.Forms.TextBox tbGanancia;
         private System.Windows.Forms.TextBox tbPeso;
+        private System.Windows.Forms.TextBox tbGanancia;
         private System.Windows.Forms.TextBox tbCapacidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPeso;

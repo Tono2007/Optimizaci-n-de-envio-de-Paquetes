@@ -20,12 +20,12 @@ namespace Paquetes
         List<double> itemsPeso = new List<double>();
         List<double> itemsGanancia = new List<double>();
         List<String> Mutacion = new List<String>();
+        List<String> NomPaquetes = new List<String>();
         Random r = new Random();
         Item mayor = new Item();
         int Poblacion;
         double sumatoria = 0;
         int capacidadMochila;
-        string line;
 
         public Form1()
         {
@@ -38,7 +38,7 @@ namespace Paquetes
         }
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            label3.Text = itemsPeso.Count.ToString();
+           // label3.Text = itemsPeso.Count.ToString();
             limpieza();
             cargrarDatos();
             genetico();
@@ -51,11 +51,11 @@ namespace Paquetes
             {
                 if (rows>1)
                 {
+                    NomPaquetes.Add(Convert.ToString(row.Cells[0].Value));
                     itemsPeso.Add(Convert.ToDouble(row.Cells[1].Value));
                     itemsGanancia.Add(Convert.ToDouble(row.Cells[2].Value));
                 }
                 rows--;
-                //formResultado.listView1.Items.Add(Convert.ToString(row.Cells[1].Value));
             }
         }
         public void genetico()//se llaman todos los metodos para el algoritmo genetico
@@ -68,7 +68,6 @@ namespace Paquetes
                 {
                     item.setPeso(Peso(item.getValor()));
                 }
-
                 restricion();//se aplica la restricion y se calcula la ganancia y la sumatoria
                 fnorm();
                 ruleta();
@@ -78,19 +77,28 @@ namespace Paquetes
                 vueltas--;
             } while (vueltas != 0);
             FormResultados formResultado = new FormResultados();
-            //tbCapacidad.Text = Convert.ToString(mayor.getValor());
-            formResultado.lbREs.Items.Clear();
-            formResultado.lbREs.Items.Add(Convert.ToString(mayor.getValor()));
+            // formResultado.lbREs.Items.Clear();
+            //   formResultado.lbREs.Items.Add(Convert.ToString(mayor.getValor()));
+           int cont3 = 0;
+            foreach (char d in mayor.getValor())
+            {
+                if (d == '1')
+                {
+                    formResultado.lbResultados.Items.Add(NomPaquetes[cont3]);
+                }
+                cont3++;
+            }
             formResultado.lbGananciaTotal.Text = Convert.ToString(mayor.getGanacia());
             formResultado.lbPesoTotal.Text = Convert.ToString(mayor.getPeso());
             formResultado.Show();
         }
-
         private void btnAgregarP_Click(object sender, EventArgs e)
         {
-
+            GV_Items.Rows.Add(tbNom.Text, tbGanancia.Text, tbPeso.Text);
+            tbNom.Clear();
+            tbPeso.Clear();
+            tbGanancia.Clear();
         }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -347,6 +355,11 @@ namespace Paquetes
             Mutacion.Clear();
             mayor = new Item();
 
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //GV_Items.Rows.Remove(GV_Items.CurrentRow);
+            GV_Items.Rows.Clear();
         }
     }
 }

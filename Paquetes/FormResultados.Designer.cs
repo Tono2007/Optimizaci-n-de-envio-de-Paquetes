@@ -31,7 +31,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnGuardarResultados = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lbResultados = new System.Windows.Forms.ListView();
             this.Paquetes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.btnGuardarResultados.ForeColor = System.Drawing.SystemColors.Control;
             this.btnGuardarResultados.Location = new System.Drawing.Point(482, 316);
             this.btnGuardarResultados.Name = "btnGuardarResultados";
-            this.btnGuardarResultados.Size = new System.Drawing.Size(218, 31);
+            this.btnGuardarResultados.Size = new System.Drawing.Size(218, 40);
             this.btnGuardarResultados.TabIndex = 4;
             this.btnGuardarResultados.Text = "Guardar Resutados";
             this.btnGuardarResultados.UseVisualStyleBackColor = false;
@@ -78,18 +78,18 @@
             this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // listView1
+            // lbResultados
             // 
-            this.listView1.BackColor = System.Drawing.SystemColors.Control;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lbResultados.BackColor = System.Drawing.SystemColors.Control;
+            this.lbResultados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Paquetes});
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.Location = new System.Drawing.Point(126, 156);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(177, 303);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
+            this.lbResultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResultados.Location = new System.Drawing.Point(126, 156);
+            this.lbResultados.Name = "lbResultados";
+            this.lbResultados.Size = new System.Drawing.Size(177, 303);
+            this.lbResultados.TabIndex = 6;
+            this.lbResultados.UseCompatibleStateImageBehavior = false;
+            this.lbResultados.View = System.Windows.Forms.View.List;
             // 
             // label1
             // 
@@ -163,7 +163,7 @@
             this.Controls.Add(this.lbPesoTotal);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lbResultados);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnGuardarResultados);
             this.Controls.Add(this.label2);
@@ -180,7 +180,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGuardarResultados;
         private System.Windows.Forms.Button btnCalcular;
-        public System.Windows.Forms.ListView listView1;
+        public System.Windows.Forms.ListView lbResultados;
         private System.Windows.Forms.ColumnHeader Paquetes;
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
