@@ -187,6 +187,7 @@
             // 
             // tbNom
             // 
+            this.tbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNom.Location = new System.Drawing.Point(292, 154);
             this.tbNom.Multiline = true;
             this.tbNom.Name = "tbNom";
@@ -211,27 +212,33 @@
             // 
             // tbPeso
             // 
+            this.tbPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPeso.Location = new System.Drawing.Point(292, 232);
             this.tbPeso.Multiline = true;
             this.tbPeso.Name = "tbPeso";
             this.tbPeso.Size = new System.Drawing.Size(127, 29);
             this.tbPeso.TabIndex = 15;
+            this.tbPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPeso_KeyPress);
             // 
             // tbGanancia
             // 
+            this.tbGanancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbGanancia.Location = new System.Drawing.Point(292, 300);
             this.tbGanancia.Multiline = true;
             this.tbGanancia.Name = "tbGanancia";
             this.tbGanancia.Size = new System.Drawing.Size(127, 29);
             this.tbGanancia.TabIndex = 16;
+            this.tbGanancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbGanancia_KeyPress);
             // 
             // tbCapacidad
             // 
+            this.tbCapacidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCapacidad.Location = new System.Drawing.Point(292, 429);
             this.tbCapacidad.Multiline = true;
             this.tbCapacidad.Name = "tbCapacidad";
             this.tbCapacidad.Size = new System.Drawing.Size(127, 29);
             this.tbCapacidad.TabIndex = 17;
+            this.tbCapacidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCapacidad_KeyPress);
             // 
             // label7
             // 

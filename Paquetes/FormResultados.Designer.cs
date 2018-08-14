@@ -38,7 +38,7 @@
             this.lbPesoTotal = new System.Windows.Forms.Label();
             this.lbGananciaTotal = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbREs = new System.Windows.Forms.ListBox();
+            this.lbIndividuo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -143,13 +143,15 @@
             this.label4.Text = "Optimización de envio de paquetes";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbREs
+            // lbIndividuo
             // 
-            this.lbREs.FormattingEnabled = true;
-            this.lbREs.Location = new System.Drawing.Point(0, 156);
-            this.lbREs.Name = "lbREs";
-            this.lbREs.Size = new System.Drawing.Size(120, 95);
-            this.lbREs.TabIndex = 12;
+            this.lbIndividuo.AutoSize = true;
+            this.lbIndividuo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIndividuo.Location = new System.Drawing.Point(446, 254);
+            this.lbIndividuo.Name = "lbIndividuo";
+            this.lbIndividuo.Size = new System.Drawing.Size(16, 24);
+            this.lbIndividuo.TabIndex = 13;
+            this.lbIndividuo.Text = "-";
             // 
             // FormResultados
             // 
@@ -157,7 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(795, 490);
-            this.Controls.Add(this.lbREs);
+            this.Controls.Add(this.lbIndividuo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbGananciaTotal);
             this.Controls.Add(this.lbPesoTotal);
@@ -187,6 +189,6 @@
         public System.Windows.Forms.Label lbPesoTotal;
         public System.Windows.Forms.Label lbGananciaTotal;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.ListBox lbREs;
+        public System.Windows.Forms.Label lbIndividuo;
     }
 }

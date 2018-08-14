@@ -38,10 +38,16 @@ namespace Paquetes
         }
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-           // label3.Text = itemsPeso.Count.ToString();
-            limpieza();
-            cargrarDatos();
-            genetico();
+            if (tbCapacidad.Text!="" && GV_Items.Rows.Count>1)
+            {
+                limpieza();
+                cargrarDatos();
+                genetico();
+            }
+            else
+            {
+                MessageBox.Show("Falta llenar algun dato", "Error");
+            }
         }
         public void cargrarDatos()
         {
@@ -77,8 +83,6 @@ namespace Paquetes
                 vueltas--;
             } while (vueltas != 0);
             FormResultados formResultado = new FormResultados();
-            // formResultado.lbREs.Items.Clear();
-            //   formResultado.lbREs.Items.Add(Convert.ToString(mayor.getValor()));
            int cont3 = 0;
             foreach (char d in mayor.getValor())
             {
@@ -90,6 +94,7 @@ namespace Paquetes
             }
             formResultado.lbGananciaTotal.Text = Convert.ToString(mayor.getGanacia());
             formResultado.lbPesoTotal.Text = Convert.ToString(mayor.getPeso());
+            formResultado.lbIndividuo.Text = Convert.ToString(mayor.getValor());
             formResultado.Show();
         }
         private void btnAgregarP_Click(object sender, EventArgs e)
@@ -149,18 +154,38 @@ namespace Paquetes
                 ganancia = 0;
                 if (item.getPeso() <= capacidadMochila)
                 {
-                    item.setGanancia(funcion(item.getValor(), 0));
+                    item.setGanancia(funcion(item.getValor()));
                 }
                 else
                 {
                     item.setGanancia(0);
                     //ganancia = funcion(item.getValor(), penalizacion(item.getValor()));//ganancia con penalizacion
                     //item.setGanancia(ganancia);
+                    item.setValor(reparacionAleatoria(item.getValor()));
+                    ganancia = (funcion(item.getValor()));
+                    item.setGanancia(ganancia);
                 }
                 sumatoria += item.getGanacia();
             }
         }
-        public double funcion(String item, double pen)
+        public string reparacionAleatoria(string individuo)
+        {
+            char[] it = individuo.ToCharArray();
+            int random = 0;
+            do
+            {
+                do
+                {
+                    random = r.Next(0, individuo.Length);
+                }
+                while (it[random] == '0');
+                it[random] = '0';
+                individuo = Convert.ToString(it);
+            }
+            while (Peso(individuo) > capacidadMochila);
+            return individuo;
+        }
+        public double funcion(String item)
         {
             double ganancia = 0;
             int cont = 0;
@@ -168,7 +193,7 @@ namespace Paquetes
             {
                 if (p == '1')
                 {
-                    ganancia += itemsGanancia[cont] - pen;
+                    ganancia += itemsGanancia[cont];
                 }
                 cont++;
             }
@@ -360,6 +385,36 @@ namespace Paquetes
         {
             //GV_Items.Rows.Remove(GV_Items.CurrentRow);
             GV_Items.Rows.Clear();
+        }
+
+        private void tbPeso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("Caracter no valido, Ingresa un número", "Número incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                e.Handled = true;
+                tbPeso.Text = "";
+            }
+        }
+
+        private void tbGanancia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("Caracter no valido, Ingresa un número", "Número incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                e.Handled = true;
+                tbGanancia.Text = "";
+            }
+        }
+
+        private void tbCapacidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("Caracter no valido, Ingresa un número", "Número incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                e.Handled = true;
+                tbCapacidad.Text = "";
+            }
         }
     }
 }
