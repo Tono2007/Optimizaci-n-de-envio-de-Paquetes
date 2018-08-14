@@ -46,7 +46,7 @@ namespace Paquetes
             }
             else
             {
-                MessageBox.Show("Falta llenar algun dato", "Error");
+                MessageBox.Show("Falta llenar algun dato", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public void cargrarDatos()
@@ -99,10 +99,17 @@ namespace Paquetes
         }
         private void btnAgregarP_Click(object sender, EventArgs e)
         {
-            GV_Items.Rows.Add(tbNom.Text, tbGanancia.Text, tbPeso.Text);
-            tbNom.Clear();
-            tbPeso.Clear();
-            tbGanancia.Clear();
+            if (tbNom.Text!="" && tbGanancia.Text!="" && tbPeso.Text!="")
+            {
+                GV_Items.Rows.Add(tbNom.Text, tbGanancia.Text, tbPeso.Text);
+                tbNom.Clear();
+                tbPeso.Clear();
+                tbGanancia.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Falta llenar algun dato", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -383,8 +390,8 @@ namespace Paquetes
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            //GV_Items.Rows.Remove(GV_Items.CurrentRow);
-            GV_Items.Rows.Clear();
+            GV_Items.Rows.Remove(GV_Items.CurrentRow);
+            //GV_Items.Rows.Clear();
         }
 
         private void tbPeso_KeyPress(object sender, KeyPressEventArgs e)

@@ -29,3 +29,5 @@ C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquete
 C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.csproj.CoreCompileInputs.cache
 C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.exe
 C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.pdb
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\itextsharp.dll
+C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\itextsharp.xml

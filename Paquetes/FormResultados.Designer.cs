@@ -30,7 +30,7 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.btnGuardarResultados = new System.Windows.Forms.Button();
-            this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.lbResultados = new System.Windows.Forms.ListView();
             this.Paquetes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
@@ -63,20 +63,21 @@
             this.btnGuardarResultados.TabIndex = 4;
             this.btnGuardarResultados.Text = "Guardar Resutados";
             this.btnGuardarResultados.UseVisualStyleBackColor = false;
+            this.btnGuardarResultados.Click += new System.EventHandler(this.btnGuardarResultados_Click);
             // 
-            // btnCalcular
+            // btnRegresar
             // 
-            this.btnCalcular.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCalcular.Location = new System.Drawing.Point(538, 398);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(109, 38);
-            this.btnCalcular.TabIndex = 5;
-            this.btnCalcular.Text = "Regresar";
-            this.btnCalcular.UseVisualStyleBackColor = false;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            this.btnRegresar.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRegresar.Location = new System.Drawing.Point(538, 398);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(109, 38);
+            this.btnRegresar.TabIndex = 5;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // lbResultados
             // 
@@ -84,12 +85,17 @@
             this.lbResultados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Paquetes});
             this.lbResultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbResultados.Location = new System.Drawing.Point(126, 156);
+            this.lbResultados.Location = new System.Drawing.Point(107, 152);
             this.lbResultados.Name = "lbResultados";
-            this.lbResultados.Size = new System.Drawing.Size(177, 303);
+            this.lbResultados.Size = new System.Drawing.Size(241, 303);
             this.lbResultados.TabIndex = 6;
             this.lbResultados.UseCompatibleStateImageBehavior = false;
             this.lbResultados.View = System.Windows.Forms.View.List;
+            // 
+            // Paquetes
+            // 
+            this.Paquetes.Text = "Paquetes";
+            this.Paquetes.Width = 121;
             // 
             // label1
             // 
@@ -166,7 +172,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbResultados);
-            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnGuardarResultados);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -181,7 +187,7 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGuardarResultados;
-        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnRegresar;
         public System.Windows.Forms.ListView lbResultados;
         private System.Windows.Forms.ColumnHeader Paquetes;
         public System.Windows.Forms.Label label1;
