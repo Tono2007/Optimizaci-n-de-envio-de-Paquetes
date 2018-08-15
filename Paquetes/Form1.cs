@@ -389,9 +389,15 @@ namespace Paquetes
 
         }
         private void button4_Click(object sender, EventArgs e)
-        {
-            GV_Items.Rows.Remove(GV_Items.CurrentRow);
-            //GV_Items.Rows.Clear();
+        {try
+            {
+                GV_Items.Rows.Remove(GV_Items.CurrentRow);
+            }
+            catch
+            {
+                MessageBox.Show("Selecciona una fila.", "Error al eliminar", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+           // GV_Items.Rows.Clear();
         }
 
         private void tbPeso_KeyPress(object sender, KeyPressEventArgs e)

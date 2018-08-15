@@ -11,7 +11,6 @@ using System.IO;
 using iTextSharp;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-using System.Drawing;
 
 namespace Paquetes
 {
@@ -23,9 +22,20 @@ namespace Paquetes
         }
         private void btnGuardarResultados_Click(object sender, EventArgs e)
         {
+            int index = 0;
+            string ruta = System.AppDomain.CurrentDomain.BaseDirectory + @"Resultados\Resultados" + index + ".pdf";
+            while(true)
+            {
+                if (File.Exists(ruta))
+                {
+                    index++;
+                    ruta = System.AppDomain.CurrentDomain.BaseDirectory + @"Resultados\Resultados" + index + ".pdf";
+                }
+                else
+                { break; }
+            }
             Document doc = new Document(PageSize.LETTER);
-            PdfWriter writer = PdfWriter.GetInstance(doc,
-                            new FileStream(@"C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Resultados\Resultados.pdf", FileMode.Create));
+            PdfWriter writer = PdfWriter.GetInstance(doc,new FileStream(@ruta, FileMode.Create));
             doc.AddTitle("Resultados-Paquetes que se deben de enviar");
             doc.AddCreator("Antonio Ayola Cortes");
             doc.Open();
@@ -55,9 +65,15 @@ namespace Paquetes
                 tblResultados.AddCell(item.Text);
             }
             doc.Add(tblResultados);
-
+            doc.Add(Chunk.NEWLINE);
+            doc.Add(new Paragraph("Peso Total: "+lbPesoTotal.Text));
+            doc.Add(Chunk.NEWLINE);
+            doc.Add(new Paragraph("Ganancia Total: "+lbGananciaTotal.Text));
+            doc.Add(Chunk.NEWLINE);
             doc.Close();
             writer.Close();
+            System.Diagnostics.Process.Start(ruta);
+
 
         }
         private void btnRegresar_Click(object sender, EventArgs e)
