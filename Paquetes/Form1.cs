@@ -434,6 +434,8 @@ namespace Paquetes
         private void btnCargarPaquetes_Click(object sender, EventArgs e)
         {
             OpenFileDialog fd= new OpenFileDialog();
+            fd.Filter = "Archivo csv|*.csv";
+
             string Directorio;
             if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fd.FileName))
             {
