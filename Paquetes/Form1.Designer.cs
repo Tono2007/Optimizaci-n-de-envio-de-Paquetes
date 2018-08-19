@@ -49,6 +49,8 @@
             this.tbCapacidad = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnCargarPaquetes = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GV_Items)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -169,7 +171,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(66, 230);
+            this.label5.Location = new System.Drawing.Point(67, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 20);
             this.label5.TabIndex = 8;
@@ -179,7 +181,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(66, 300);
+            this.label6.Location = new System.Drawing.Point(67, 255);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 20);
             this.label6.TabIndex = 9;
@@ -202,7 +204,7 @@
             this.btnAgregarP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarP.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAgregarP.Location = new System.Drawing.Point(136, 360);
+            this.btnAgregarP.Location = new System.Drawing.Point(267, 301);
             this.btnAgregarP.Name = "btnAgregarP";
             this.btnAgregarP.Size = new System.Drawing.Size(190, 37);
             this.btnAgregarP.TabIndex = 13;
@@ -213,21 +215,21 @@
             // tbPeso
             // 
             this.tbPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPeso.Location = new System.Drawing.Point(292, 232);
+            this.tbPeso.Location = new System.Drawing.Point(292, 203);
             this.tbPeso.Multiline = true;
             this.tbPeso.Name = "tbPeso";
             this.tbPeso.Size = new System.Drawing.Size(127, 29);
-            this.tbPeso.TabIndex = 15;
+            this.tbPeso.TabIndex = 11;
             this.tbPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPeso_KeyPress);
             // 
             // tbGanancia
             // 
             this.tbGanancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGanancia.Location = new System.Drawing.Point(292, 300);
+            this.tbGanancia.Location = new System.Drawing.Point(292, 252);
             this.tbGanancia.Multiline = true;
             this.tbGanancia.Name = "tbGanancia";
             this.tbGanancia.Size = new System.Drawing.Size(127, 29);
-            this.tbGanancia.TabIndex = 16;
+            this.tbGanancia.TabIndex = 12;
             this.tbGanancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbGanancia_KeyPress);
             // 
             // tbCapacidad
@@ -262,12 +264,40 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnCargarPaquetes
+            // 
+            this.btnCargarPaquetes.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnCargarPaquetes.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCargarPaquetes.FlatAppearance.BorderSize = 0;
+            this.btnCargarPaquetes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarPaquetes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarPaquetes.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCargarPaquetes.Location = new System.Drawing.Point(280, 364);
+            this.btnCargarPaquetes.Name = "btnCargarPaquetes";
+            this.btnCargarPaquetes.Size = new System.Drawing.Size(157, 37);
+            this.btnCargarPaquetes.TabIndex = 20;
+            this.btnCargarPaquetes.Text = "Cargar paquetes";
+            this.btnCargarPaquetes.UseVisualStyleBackColor = false;
+            this.btnCargarPaquetes.Click += new System.EventHandler(this.btnCargarPaquetes_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(348, 341);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(21, 20);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "O";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(1188, 490);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnCargarPaquetes);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbCapacidad);
@@ -319,6 +349,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colGanancia;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Button btnCargarPaquetes;
+        private System.Windows.Forms.Label label8;
     }
 }
 

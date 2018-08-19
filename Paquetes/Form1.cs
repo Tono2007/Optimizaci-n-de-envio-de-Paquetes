@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -429,5 +430,25 @@ namespace Paquetes
                 tbCapacidad.Text = "";
             }
         }
+
+        private void btnCargarPaquetes_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fd= new OpenFileDialog();
+            string Directorio;
+            if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fd.FileName))
+            {
+                Directorio = fd.FileName;
+                using (var reader = new StreamReader(Directorio))
+                {
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                        var values = line.Split(',');
+                        GV_Items.Rows.Add(values[0], Convert.ToDouble(values[1]), Convert.ToDouble(values[2]));
+                    }
+                }
+            }
+        }
+        
     }
 }

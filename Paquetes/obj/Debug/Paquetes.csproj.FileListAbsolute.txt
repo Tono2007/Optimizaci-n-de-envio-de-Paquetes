@@ -31,3 +31,6 @@ C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquete
 C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.pdb
 C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\itextsharp.dll
 C:\Users\Toño\Desktop\Paquetes\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\itextsharp.xml
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\itextsharp.dll
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\bin\Debug\itextsharp.xml
+C:\Users\Juan Daniel\Documents\proyectos noveno\Optimizaci-n-de-envio-de-Paquetes\Paquetes\obj\Debug\Paquetes.csproj.CopyComplete
